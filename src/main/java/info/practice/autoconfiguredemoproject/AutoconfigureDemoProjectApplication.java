@@ -9,5 +9,4 @@ public class AutoconfigureDemoProjectApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(AutoconfigureDemoProjectApplication.class, args);
 	}
-
 }
