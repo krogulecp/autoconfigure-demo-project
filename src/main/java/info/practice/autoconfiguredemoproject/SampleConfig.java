@@ -10,6 +10,7 @@ public class SampleConfig {
 
     public SampleConfig(ApplicationContext applicationContext) {
         Object dummyString = applicationContext.getBean("dummyString");
+        Object myCustomizableAutoconfigurationBean = applicationContext.getBean("myCustomizableAutoconfigurationBean");
         this.applicationContext = applicationContext;
     }
 }
