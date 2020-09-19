@@ -11,5 +11,6 @@ public class SampleConfig {
     public SampleConfig(ApplicationContext context) {
         this.context = context;
         Object dummyConfig = context.getBean("dummyString");
+        System.out.println(dummyConfig);
     }
 }
