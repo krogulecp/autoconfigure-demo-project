@@ -6,11 +6,10 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class SampleConfig {
 
-    private final ApplicationContext applicationContext;
+    private final ApplicationContext context;
 
-    public SampleConfig(ApplicationContext applicationContext) {
-        Object dummyString = applicationContext.getBean("dummyString");
-        Object myCustomizableAutoconfigurationBean = applicationContext.getBean("myCustomizableAutoconfigurationBean");
-        this.applicationContext = applicationContext;
+    public SampleConfig(ApplicationContext context) {
+        this.context = context;
+        Object dummyConfig = context.getBean("dummyString");
     }
 }
